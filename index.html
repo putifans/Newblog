@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Coinserom - Anuncios 320x100, 300x250 y 250x250</title>
+    <style>
+        /* Reset básico y estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f6f9fc 0%, #eef2f7 100%);
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+            line-height: 1.4;
+            padding: 2rem 1.25rem;
+            min-height: 100vh;
+        }
+
+        /* Contenedor principal que limita el ancho y centra todo */
+        .main-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(0px);
+            border-radius: 2rem;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Encabezado y textos */
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1f2b3c, #2c3e4e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            color: #4a5b6e;
+            font-size: 1rem;
+            border-bottom: 2px solid #cfdfed;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Layout flexible para los anuncios */
+        .ads-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.2rem;
+        }
+
+        /* Fila horizontal para los dos cuadrados (se adapta a móvil) */
+        .square-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        /* Cada bloque de anuncio conserva EXACTAMENTE el código original.
+           Solo añadimos un micro efecto visual para separación sin alterar dimensiones ni interacción */
+        .ad-unit {
+            transition: transform 0.2s ease, filter 0.2s;
+        }
+        .ad-unit:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Nota / pie de página sutil */
+        .footer-note {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #5f7f9e;
+            border-top: 1px solid #dce5ed;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+        .footer-note span {
+            background: #eef3fc;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            font-size: 0.7rem;
+        }
+
+        /* Ajuste fino para pantallas muy pequeñas: los contenedores internos ya son responsive por su width fijo,
+           pero aseguramos que no se recorten */
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .main-container {
+                padding: 1.5rem 1rem;
+            }
+            .square-row {
+                gap: 1.5rem;
+            }
+            .ads-gallery {
+                gap: 1.8rem;
+            }
+        }
+        /* Para dispositivos con ancho menor a 350px, se permite scroll horizontal suave pero sin romper diseño */
+        @media (max-width: 360px) {
+            .main-container {
+                overflow-x: auto;
+            }
+            .ads-gallery, .square-row {
+                justify-content: center;
+            }
+        }
+
+        /* Mejora de accesibilidad: focus visible en enlaces */
+        a:focus-visible, iframe:focus-visible {
+            outline: 2px solid #2c7da0;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container">
+    <div class="header">
+        <h1>📢 Espacios publicitarios</h1>
+        <p>Formatos estándar · 320x100 · 300x250 · 250x250</p>
+    </div>
+
+    <div class="ads-gallery">
+        <!-- ================= ANUNCIO 1: 320x100 ================= -->
+        <!-- Se respeta íntegramente el código proporcionado -->
+        <div class="ad-unit">
+            <div style="width:320px; margin:0 auto; text-align:center;">
+                <iframe src="//ads.coinserom.com/pub?adsunit=343031&size=320x100" 
+                        style="width:320px;height:100px;border:0px;padding:0;background-color: transparent;overflow: auto;" 
+                        title="Anuncio Coinserom 320x100">
+                </iframe>
+                <a style="display: block;text-align:right;font-size:12px;width:320px;" 
+                   href="https://coinserom.com/?affiliate=3530343730" 
+                   target="_blank" 
+                   rel="noopener noreferrer">Ads by coinserom</a>
+            </div>
+        </div>
+
+        <!-- ================= FILA PARA LOS ANUNCIOS CUADRADOS ================= -->
+        <div class="square-row">
+            <!-- ANUNCIO 2: 300x250 (original) -->
+            <div class="ad-unit">
+                <div style="width:300px; margin:0 auto; text-align:center;">
+                    <iframe src="//ads.coinserom.com/pub?adsunit=343033&size=300x250" 
+                            style="width:300px;height:250px;border:0px;padding:0;background-color: transparent;overflow: auto;"
+                            title="Anuncio Coinserom 300x250">
+                    </iframe>
+                    <a style="display: block;text-align:right;font-size:12px;width:300px;" 
+                       href="https://coinserom.com/?affiliate=3530343730" 
+                       target="_blank" 
+                       rel="noopener noreferrer">Advertise here</a>
+                </div>
+            </div>
+
+            <!-- ANUNCIO 3: 250x250 (original) -->
+            <div class="ad-unit">
+                <div style="width:250px; margin:0 auto; text-align:center;">
+                    <iframe src="//ads.coinserom.com/pub?adsunit=343032&size=250x250" 
+                            style="width:250px;height:250px;border:0px;padding:0;background-color: transparent;overflow: auto;"
+                            title="Anuncio Coinserom 250x250">
+                    </iframe>
+                    <a style="display: block;text-align:right;font-size:12px;width:250px;" 
+                       href="https://coinserom.com/?affiliate=3530343730" 
+                       target="_blank" 
+                       rel="noopener noreferrer">Ads by coinserom</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        <span>✨ Anuncios gestionados por Coinserom</span>
+        <span>🔒 Contenido externo — clics y visualizaciones seguros</span>
+        <span>📱 Compatible con todos los dispositivos</span>
+    </div>
+</div>
+</body>
+</html>
